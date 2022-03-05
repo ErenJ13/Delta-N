@@ -1,18 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: #ffeefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: 'Pacifico', sans-serif;
+  background-color: #ffe1e6;
 }
 
 .slider {
@@ -243,7 +230,20 @@ body {
 
 .footer-logo-image {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #ffeefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Pacifico', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
