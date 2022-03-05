@@ -227,6 +227,52 @@ body {
     }
 }
 
+.news {
+    &-title {
+        font-family: 'Pacifico', sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &-container {
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &-pic {
+        width: 300px;
+    }
+
+    &-item {
+        width: 350px;
+
+        @media (max-width: 100px) {
+            width: 500px;
+        }
+    }
+
+    &-button {
+        margin-bottom: 20px;
+        padding: 5px 10px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #f83d7b;
+            color: white;
+        }
+    }
+
+    
+
+
+}
+
 .footer {
     padding: 2%;
     display: flex;
@@ -259,7 +305,6 @@ body {
     font-family: 'Pacifico', sans-serif;
     margin: 0;
     border-top: 1px solid #d60ed6;
-
 
     @media (max-width: 645px) {
         flex-direction: column;
