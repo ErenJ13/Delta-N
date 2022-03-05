@@ -1,9 +1,18 @@
 body {
-
+    background-color: #ffcefb;
     font-style: bold;
     font-family: 'Pacifico', sans-serif;
     text-align: center;
 
+}
+
+.h2 {
+    font-family: font-family: 'Pacifico', sans-serif;
+
+}
+
+.h1 {
+    font-family: 'Pacifico', sans-serif;
 }
 
 .header {
@@ -104,7 +113,7 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .carousel-item {
         height: 100vh;
-        background-size: contain;
+        background-size: cover;
     }
 }
 
@@ -383,7 +392,7 @@ body {
 }
 
 .help-online__title {
-    font-size: 18px;
+    font-size: calc(14px + 45*(100vw / 1280));
     text-align: center;
     padding-top: 20px;
 }
@@ -394,14 +403,14 @@ body {
 }
 
 .help-online__button--tel {
-    font-size: 20px;
+    font-size: calc(14px + 45*(100vw / 1280));
     font-weight: 800;
     padding-top: 10px;
     padding-left: 5px;
 }
 
 .help-icons__title {
-    font-size: 18px;
+    font-size: calc(14px + 45*(100vw / 1280));
     padding-left: 50px;
 }
 
