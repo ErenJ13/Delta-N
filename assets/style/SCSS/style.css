@@ -12,6 +12,17 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-style: bold;
+  font-family: 'Pacifico', sans-serif;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: calc(14px + 45*(100vw / 1280));
+  text-align: center;
+  padding-bottom: 2%;
+  margin-top: 10%;
+  font-style: bold;
   font-family: 'Pacifico', sans-serif;
 }
 
