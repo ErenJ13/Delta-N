@@ -253,6 +253,24 @@ h3 {
     }
 }
 
+.firstpage_tittle {
+    font-size: calc(14px + 45*(100vw / 1280));
+    text-transform: uppercase;
+    color: rgb(230, 230, 230);
+    margin-top: 20%;
+}
+
+.firstpage {
+    display: grid;
+    max-width: 100vw;
+    height: 80vh;
+    background-image: url(/assets/img/main.jpg);
+    opacity: 0.95;
+    margin-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 #buttonup {
     display: inline-block;
     background-color: #ffc1f5;
