@@ -76,6 +76,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
 }
 
 .wrapper .card {
@@ -104,6 +108,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   z-index: 1;
+  max-width: 100%;
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
 }
@@ -159,6 +164,7 @@ body {
           box-shadow: 0 20px 50px rgba(63, 43, 59, 0.8);
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
+  max-width: 100%;
 }
 
 .wrapper .card:hover .face.face2 {
@@ -201,13 +207,13 @@ body {
   .wrapper {
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     max-width: 100%;
+    max-height: 100%;
   }
   .wrapper .card .face.face1 .content img {
-    max-width: 30vw;
+    max-width: 50vw;
     max-height: 20vh;
   }
 }
@@ -216,13 +222,13 @@ body {
   .wrapper {
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 100%;
+    max-height: 100%;
   }
   .wrapper .card .face.face1 .content img {
-    max-width: 30vw;
+    max-width: 50vw;
     max-height: 20vh;
   }
 }
@@ -231,14 +237,56 @@ body {
   .wrapper {
     display: -ms-grid;
     display: grid;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
     max-width: 100%;
+    max-height: 100%;
   }
   .wrapper .card .face.face1 .content img {
-    max-width: 30vw;
+    max-width: 50vw;
     max-height: 20vh;
   }
+}
+
+#buttonup {
+  display: inline-block;
+  background-color: #ffc1f5;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color .3s, opacity .5s, visibility .5s;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#buttonup::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+#buttonup:hover {
+  cursor: pointer;
+  background-color: #ff00ea;
+}
+
+#buttonup:active {
+  background-color: white;
+}
+
+#buttonup.show {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */
