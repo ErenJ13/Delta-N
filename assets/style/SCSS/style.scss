@@ -228,9 +228,9 @@ body {
 }
 
 .footer {
-    padding: 2% 12%;
+    padding: 2%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     &-alarm-button {
 
@@ -238,6 +238,12 @@ body {
         align-self: center;
         &:hover {
             cursor: pointer;
+            background-color: #f83d7b;
+            color: white;
+        }
+
+        &:active {
+            outline: none;
         }
 
     }
@@ -246,13 +252,17 @@ body {
         align-self: center;
         margin: 0;
         padding: 0;
-        min-height: 100vh;
-        background: rgb(255, 238, 254);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        font-family: 'Pacifico', sans-serif;
+        align-self: center;
+        width: 55px;
     }
 
+    font-family: 'Pacifico', sans-serif;
+    margin: 0;
+    border-top: 1px solid #d60ed6;
+
+
+    @media (max-width: 645px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
