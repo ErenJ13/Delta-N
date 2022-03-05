@@ -1,5 +1,224 @@
 body {
-  background-color: #ffe1e6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #ffeefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.slider {
+  margin: 10px 0;
+}
+
+.slider__title {
+  text-transform: uppercase;
+  font-size: calc(14px + 45*(100vw / 1280));
+  text-align: center;
+  padding-bottom: 2%;
+  margin-top: 10%;
+  font-style: bold;
+  font-family: 'Pacifico', sans-serif;
+}
+
+.carousel-item {
+  height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .carousel-item {
+    height: 800px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .carousel-item {
+    height: 100vh;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .carousel-item {
+    height: 100vh;
+    background-size: contain;
+  }
+  .slider {
+    margin: 30px 0;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none;
+  border: none;
+}
+
+/****************************** section carusel_end ******************************/
+.wrapper {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .card {
+  position: relative;
+  cursor: pointer;
+  background-color: #c777a3;
+}
+
+.wrapper .card .face {
+  width: 300px;
+  height: 200px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .card .face.face1 {
+  position: relative;
+  background: #e6c3e1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.wrapper .card:hover .face.face1 {
+  background: #ff9fbf;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.wrapper .card .face.face1 .content {
+  opacity: 0.2;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.wrapper .card:hover .face.face1 .content {
+  opacity: 1;
+}
+
+.wrapper .card .face.face1 .content img {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 10vw;
+  max-height: 20vh;
+}
+
+.wrapper .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  padding: 0;
+  color: #422432;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.wrapper .card .face.face2 {
+  position: relative;
+  background: #baffea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 20px 50px rgba(63, 43, 59, 0.8);
+          box-shadow: 0 20px 50px rgba(63, 43, 59, 0.8);
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
+.wrapper .card:hover .face.face2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.wrapper .card .face.face2 .content p {
+  margin: 0;
+  padding: 0;
+  color: #554118;
+}
+
+.wrapper .card .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #ffae00;
+  padding: 5px;
+  border: 1px solid #ccc28c;
+}
+
+@media screen and (max-width: 760px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+  }
+  .wrapper .card .face.face1 .content img {
+    max-width: 30vw;
+    max-height: 20vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .wrapper {
+    height: 800px;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .wrapper {
+    height: 50vh;
+    background-size: contain;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    height: 100%;
+    background-size: contain;
+  }
+  .wrapper {
+    margin: 30px 0;
+  }
 }
 
 .footer {
