@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-style: bold;
   font-family: 'Pacifico', sans-serif;
@@ -416,4 +417,86 @@ body {
   padding-top: 15px;
   margin-left: 20px;
 }
+
+.party-wrapper {
+  margin-left: 12%;
+  margin-right: 12%;
+  background-color: #61f1de;
+}
+
+.services {
+  font-family: 'TTHoves';
+  background-color: #fbfcfd;
+  color: #0f0f0f;
+}
+
+.services-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #464545;
+  padding-left: 8.21%;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.services-gallery {
+  width: 90vw;
+  margin-left: 8%;
+  margin-top: 50px;
+}
+
+/*Всплывающий блок на картинке start*/
+.services-gallery__box {
+  position: relative;
+  width: 18%;
+  display: inline-block;
+  margin-right: 45px;
+  min-width: 20%;
+}
+
+.services-gallery__img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.services-gallery__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #67f8f8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.services-gallery__box:hover .services-gallery__overlay {
+  height: 60%;
+}
+
+.gallery__overlay__title {
+  color: #252525;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.gallery__overlay__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*Всплывающий блок на картинке end*/
 /*# sourceMappingURL=style.css.map */
